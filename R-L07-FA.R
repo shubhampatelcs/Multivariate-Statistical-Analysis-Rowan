@@ -106,10 +106,10 @@ library("corrplot")
 corrplot(R, is.corr=TRUE, col= c("#C994C7","#DF65B0","#E7298A"),tl.col="black")
 
 # Test to find the appropriate number of factors: 
-vals = c()
-for(k in 1:8)
+pvals = c()
+for(k in 1:5)
   pvals[k] = factanal(covmat = R,n.obs = 280,factors = k)$PVAL
-p
+
 pvals
 
 # Varimax rotation to the resulting model
